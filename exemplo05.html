@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            border: 1px solid #bfbdbd;
+            width: 10rem;
+            height: 10rem;
+            margin: 1rem auto;
+            padding: 1rem;
+            box-shadow: .5rem .5rem .5rem .01rem #bfbdbd;
+        }
+        .titulo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .descricao{
+            font-size: .8rem;
+        }
+        .preco {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <script>
+            /*
+              Declaração de variável.
+              Comandos de saída.
+              Template string.
+            */
+            var produto = prompt("Informe o produto:");
+            var descricao = prompt("Descreva o produto:");
+            var preco = prompt("Informe o preço do produto:");
+
+            document.write(`<h1 class="titulo">${produto}!</h1>`);
+            document.write(`<article class="descricao">${descricao}!</article>`);
+            document.write(`<aside class="preco">${preco}!</aside>`);
+        </script>
+    </div>
+</body>
+
+</html>
