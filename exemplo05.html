@@ -14,22 +14,31 @@
         .container {
             border: 1px solid #bfbdbd;
             width: 10rem;
-            height: 10rem;
+            height: 15rem;
             margin: 1rem auto;
             padding: 1rem;
             border-radius: .5rem;
             box-shadow: .5rem .5rem .5rem .01rem #bfbdbd;
         }
+
         .titulo {
             font-size: 1.3rem;
             font-weight: bold;
         }
-        .descricao{
+
+        .descricao {
             font-size: .8rem;
         }
+
         .preco {
             font-size: 1.5rem;
             font-weight: bold;
+            text-align: right;
+        }
+
+        img {
+            width: 10rem;
+            height: 8rem;
         }
     </style>
 </head>
@@ -45,8 +54,8 @@
             var produto = prompt("Informe o produto:");
             var descricao = prompt("Descreva o produto:");
             var preco = prompt("Informe o preço do produto:");
-
-            document.write(`<h1 class="titulo">${produto}!</h1>`);
+            document.write("<img src='logo.png' alt='Logo do supermercado'>");
+            document.write(`<h1 class="titulo">${produto}</h1>`);
             document.write(`<article class="descricao">${descricao}!</article>`);
             document.write(`<aside class="preco">${preco}!</aside>`);
         </script>
